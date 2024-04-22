@@ -1,0 +1,36 @@
+.calculator {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .calculator button {
+        padding: 10px;
+        font-size: 20px;
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    .calculator button:hover {
+        background-color: #e0e0e0;
+    }
+
+    .output {
+        grid-column: span 4;
+        text-align: right;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: 1px solid #ccc;
+    }
+
+    #equals {
+        grid-column: 4;
+        grid-row: 3 / span 4;
+        background-color: red;
+        color:black;
+    }
